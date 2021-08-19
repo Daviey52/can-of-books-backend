@@ -18,17 +18,17 @@ Clone this repo to your own account with the green "Use this template" button. T
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
-This is a server application that use Auth0 technology to Authenticate a user and send responce to the client side app
+This is a server application that use Auth0 technology to Authenticate a user and send responce to the client side app. The all has also incoprated used of NoSQL database to persist data
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
-Need basic technologies to write a serverside app use Node.js and also reading through the Auth0 doc on server side implimentation
+Need basic technologies to write a serverside app use Node.js and also reading through the Auth0 doc on server side implimentation. Reading on mongose Database is also critical
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
-Languages used include JavaScript and technologies used include express, cors, jwt , jwkClients
+Languages used include JavaScript and technologies used include express, cors, jwt , jwkClients, mongo
 
 ## Change Log
 
@@ -37,6 +37,7 @@ Languages used include JavaScript and technologies used include express, cors, j
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 08/15/2021 - This Application can send appropriate responses to the client side.
+08/18/2021 This has intregrated use of NoSQL databse to persist data
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -48,12 +49,12 @@ For each of the lab features, make an estimate of the time it will take you to c
 
 Name of feature: Serverside Authentification
 
-Estimate of time needed to complete: 1 hrs
+Estimate of time needed to complete: 3 hrs
 
-Start time: 09:00
+Start time: 07:00
 
 Finish time: 10:00
 
-Actual time needed to complete: 45
+Actual time needed to complete: 3
 
-![UML pic](./Lab11%20-%20UML.png)
+![UML pic](./Lab12%20-%20UML.png)
