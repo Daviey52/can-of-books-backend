@@ -38,6 +38,7 @@ Languages used include JavaScript and technologies used include express, cors, j
 
 08/15/2021 - This Application can send appropriate responses to the client side.
 08/18/2021 This has intregrated use of NoSQL databse to persist data
+08/22/2021 - The app allows books to be added and deleted from the database
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -57,4 +58,4 @@ Finish time: 10:00
 
 Actual time needed to complete: 3
 
-![UML pic](./Lab12%20-%20UML.png)
+![UML pic](./Lab13%20-%20UML.png)
