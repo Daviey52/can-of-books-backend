@@ -7,11 +7,13 @@ const app = express();
 app.use(cors());
 const mongoose = require('mongoose');
 const BookModel = require('./models/books');
+app.use(express.json());
 
 
 
 const jwt = require('jsonwebtoken');
 const jwksClient = require('jwks-rsa');
+const { response } = require('express');
 const client = jwksClient({
   jwksUri: 'https://dev-nk1d4djb.us.auth0.com/.well-known/jwks.json'
 });
@@ -103,3 +105,18 @@ async function clear() {
   }
 }
 // clear();
+
+app.post('/books', (req, res) => {
+  let { title, author, status, description, email } = req.body;
+  // let objLiteral = { title, author, status, description, email };
+  let newBook = new BookModel({ title, author, status, description, email });
+  newBook.save();
+  res.send('success');
+});
+
+app.delete('/books/:id', async (req, res) => {
+  let myId = req.params.id;
+  await BookModel.findByIdAndDelete(myId);
+  res.send(`sucessfully deleted`);
+
+});
