@@ -107,16 +107,24 @@ async function clear() {
 // clear();
 
 app.post('/books', (req, res) => {
-  let { title, author, status, description, email } = req.body;
-  // let objLiteral = { title, author, status, description, email };
-  let newBook = new BookModel({ title, author, status, description, email });
-  newBook.save();
-  res.send('success');
+  try {
+
+    let { title, author, status, description, email } = req.body;
+    let newBook = new BookModel({ title, author, status, description, email });
+    newBook.save();
+    res.send(newBook);
+  } catch (err) {
+    console.log('post failed')
+  }
 });
 
 app.delete('/books/:id', async (req, res) => {
-  let myId = req.params.id;
-  await BookModel.findByIdAndDelete(myId);
-  res.send(`sucessfully deleted`);
+  try {
+    let myId = req.params.id;
+    await BookModel.findByIdAndDelete(myId);
+    res.send(`sucessfully deleted`);
+  } catch (err) {
+    console.log('book deleted')
+  }
 
 });
