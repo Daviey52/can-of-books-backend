@@ -18,7 +18,7 @@ Clone this repo to your own account with the green "Use this template" button. T
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
-This is a server application that use Auth0 technology to Authenticate a user and send responce to the client side app. The all has also incoprated used of NoSQL database to persist data
+This is a server application that use Auth0 technology to Authenticate a user and send responce to the client side app. The all has also incoprated used of NoSQL database to persist data. User's can add , update and delete books to the database.
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
@@ -39,6 +39,7 @@ Languages used include JavaScript and technologies used include express, cors, j
 08/15/2021 - This Application can send appropriate responses to the client side.
 08/18/2021 This has intregrated use of NoSQL databse to persist data
 08/22/2021 - The app allows books to be added and deleted from the database
+08/25/2021 - The app allows user to update a book that is stored in the database.
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -58,4 +59,4 @@ Finish time: 10:00
 
 Actual time needed to complete: 3
 
-![UML pic](./Lab13%20-%20UML.png)
+![UML pic](./Lab14%20-%20UML.png)

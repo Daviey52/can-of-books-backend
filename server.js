@@ -128,3 +128,14 @@ app.delete('/books/:id', async (req, res) => {
   }
 
 });
+app.put('/books/:id', async (req, res) => {
+  try {
+    let myId = req.params.id;
+    let { title, author, status, description, email } = req.body;
+    const updateBook = await BookModel.findByIdAndUpdate(myId, { title, author, status, description, email }, { new: true, overwrite: true });
+
+    res.status(200).send(updateBook);
+  } catch (error) {
+    res.status(500).send('unable to update the databse')
+  }
+})
